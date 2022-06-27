@@ -43,6 +43,8 @@ function manterConexao() {
 // Renderizar mensagens
 function renderizarMensagens() {
     const ul = document.querySelector(".content");
+    //acredito que funcione assim
+    // ul.innerHTML = ""
     document.querySelector("ul").innerHTML = "";
     for (let i = 0; i < mensagens.length; i++) {
         if (mensagens[i].type == "status") {
